@@ -1,0 +1,2378 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+
+.clearfloat {
+    *zoom: 1;
+}
+
+.clearfloat:before, .clearfloat:after {
+    content: "";
+    display: table;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.clearfloat:after {
+    clear: both;
+}
+
+.topbox {
+    background: #FAFAFA;
+    padding: 20px 0 14px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 200;
+    width: 100%;
+}
+
+.top {
+    width: 1200px;
+    margin: auto;
+}
+
+.centop {
+    display: none;
+}
+
+.logo {
+    width: 286px;
+    float: left;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+.w_search {
+    display: none;
+}
+
+.w_carcut {
+    display: none;
+}
+
+.nav {
+    width: 380px;
+    float: left;
+    height: 24px;
+    margin: 24px 70px;
+}
+
+.nav ul {
+    width: 100%;
+}
+
+.nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nav li a {
+    color: #424242;
+    transition: all .3s ease-in;
+    display: block;
+    width: 100%;
+}
+
+.nav li a:hover {
+    color: #3fc048;
+}
+
+.searchbox {
+    width: 214px;
+    height: 36px;
+    float: left;
+    border: 1px solid #3FC048;
+    border-radius: 18px;
+    margin-top: 16px;
+}
+
+.searchbox input {
+    width: 169px;
+    float: left;
+    margin-left: 12px;
+    line-height: 36px;
+    font-size: 12px;
+    color: #3fc048;
+    background: transparent;
+}
+
+.searchbox input:-ms-input-placeholder {
+    color: #3FC048;
+}
+
+.searchbox input::-webkit-input-placeholder {
+    color: #3FC048;
+}
+
+.searchbox input:-moz-placeholder {
+    color: #3FC048;
+}
+
+.searchbox input::-moz-placeholder {
+    color: #3FC048;
+}
+
+.se_btn {
+    display: inline-block;
+    width: 20px;
+    height: 36px;
+    background-image: url(../images/search.png);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.regcut {
+    width: 98px;
+    float: right;
+    height: 22px;
+    margin-top: 26px;
+}
+
+.regcut a {
+    display: inline-block;
+    width: 49%;
+    font-size: 14px;
+    color: #999999;
+    transition: all .3s ease-in;
+}
+
+.regcut a:hover {
+    color: #3FC048;
+}
+
+.regcut a:first-child {
+    text-align: left;
+    float: left;
+}
+
+.regcut span {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #D2D2D2;
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+.regcut a:last-child {
+    text-align: right;
+    float: left;
+}
+
+.menu {
+    display: none;
+    width: 28px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu img {
+    width: 100%;
+}
+
+.serbtn {
+    display: none;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menubox {
+    width: 75%;
+    background: #3FC048;
+    position: absolute;
+    left: -100%;
+    top: 82px;
+}
+
+.w_pic {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+    border: 3px solid #24772a;
+}
+
+.w_pic a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.w_pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.w_per {
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.w_login {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.w_login a {
+    color: #FFFFFF;
+    margin: 0 3px;
+}
+
+.w_mav {
+    width: 100%;
+}
+
+.w_mav a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #72dd7a;
+}
+
+.w_mav .active {
+    background: #20af2b;
+}
+
+.w_search {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background: #FAFAFA;
+    z-index: 200;
+}
+
+.w_se {
+    width: 58%;
+    margin: 21px auto;
+    background: #FFFFFF;
+    height: 40px;
+    border-radius: 25px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 18px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.w_se input {
+    width: calc(100% - 50px);
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.w_se span {
+    float: right;
+    display: inline-block;
+    width: 26px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(../images/wsear.png) no-repeat;
+    background-position: 0;
+}
+
+.w_sebtn {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #999999;
+}
+
+/*top*/
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 22;
+    box-sizing: border-box;
+}
+
+.banner ul {
+    width: 20000px;
+}
+
+.banner ul li {
+    float: left;
+}
+
+.banner img {
+    display: inline-block;
+    width: 100%;
+}
+
+.banner .num {
+    z-index: 100;
+    position: absolute;
+    bottom: 17px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 288px;
+}
+
+.banner .num li {
+    float: none;
+    display: inline-block;
+    margin: 0 9px;
+    overflow: hidden;
+    width: 10px;
+    cursor: pointer;
+    border: 1px solid #717074;
+    transition: all .3s ease-in;
+    height: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.banner .num li span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.banner .num li:hover {
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.banner .num .active {
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 1px solid transparent;
+}
+
+.banner .num .active:hover {
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.ban_prev {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    text-align: center;
+}
+
+.ban_next {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    position: absolute;
+    transition: all .3s ease-in;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    text-align: center;
+}
+
+.ban_prev img {
+    display: block;
+    width: auto;
+    transition: all .3s ease-in;
+}
+
+.ban_prev .prev1 {
+    margin: 13px auto;
+}
+
+.ban_prev .prev2 {
+    margin: 40px auto;
+}
+
+.ban_prev:hover .prev1 {
+    margin: -28px auto;
+}
+
+.ban_next img {
+    display: block;
+    width: auto;
+    transition: all .3s ease-in;
+}
+
+.ban_next .next1 {
+    margin: 13px auto;
+}
+
+.ban_next .next2 {
+    margin: 40px auto;
+}
+
+.ban_next:hover .next1 {
+    margin: -28px auto;
+}
+
+/*banner*/
+.w_dribox {
+    display: none;
+}
+
+.newsday {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.news_tit {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f5f5f5;
+    box-sizing: border-box;
+}
+
+.news_tit h1 {
+    display: inline;
+    float: left;
+    font-size: 18px;
+    color: #3f3f3f;
+    font-weight: 800;
+    margin-right: 27px;
+}
+
+.news_tit span {
+    font-size: 12px;
+    color: #c8c8c8;
+    float: left;
+    margin-top: 5px;
+}
+
+.news_tit a {
+    display: block;
+    width: 42px;
+    float: right;
+    height: 26px;
+    overflow: hidden;
+}
+
+.news_tit a img {
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.news_tit a .more1 {
+    margin-top: 10px;
+}
+
+.news_tit a .more2 {
+    margin: 10px auto;
+}
+
+.news_tit a:hover .more1 {
+    margin-top: -13px;
+}
+
+/*newstit*/
+.newsbox {
+    width: 1235px;
+    position: relative;
+    left: -17.5px;
+    margin-top: 35px;
+}
+
+.newsbox li {
+    float: left;
+    width: 308px;
+}
+
+.newsban {
+    width: 1200px;
+    overflow: hidden;
+    margin-left: 17.5px;
+}
+
+.newsban ul {
+    width: 20000px;
+    position: relative;
+    left: -15.5px;
+}
+
+.newsbox li a {
+    display: block;
+    width: 274px;
+    margin: auto;
+}
+
+.newscont {
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    padding: 12px 17px;
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: 25px;
+}
+
+.newsbox li a:hover .newscont {
+    color: #3FC048;
+}
+
+.pic_div {
+    width: 100%;
+    height: 168px;
+    position: relative;
+}
+
+.pic_div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pic_bj {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all .3s ease-in;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/newsbj.png);
+    background-size: 100% 100%;
+}
+
+.newsbox li a:hover .pic_bj {
+    top: 0;
+}
+
+.fanbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.w_fan {
+    width: 100%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 23px;
+    overflow: hidden;
+}
+
+.w_fan a {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: #a5a5a5;
+    background: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.wline {
+    display: block;
+    float: left;
+    width: 1px;
+    background: #E5E5E5;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.w_cen {
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 1px solid #72dd7a;
+}
+
+.w_cen a {
+    display: inline;
+    color: #FFFFFF;
+    position: relative;
+    font-size: 20px;
+}
+
+.w_cen img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 26px;
+}
+
+.w_cen span {
+    vertical-align: middle;
+}
+
+.w_cent {
+    float: left;
+}
+
+.w_set {
+    float: right;
+}
+
+.wdian {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #FF0000;
+    position: absolute;
+    right: -3px;
+    top: 4px;
+}
+
+/*newsli*/
+.newsprev {
+    position: absolute;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    left: -47px;
+    background: #FFFFFF;
+    overflow: hidden;
+    top: 50%;
+    margin-top: -19px;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+
+.newsprev span {
+    display: inline-block;
+    width: 90px;
+}
+
+.newsprev img {
+    margin-top: 11px;
+    transition: all .3s ease-in;
+}
+
+.npr1 {
+    margin-left: 14px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.npr2 {
+    margin-left: 15px;
+    position: relative;
+    left: 0;
+    opacity: 0;
+}
+
+.newsprev:hover {
+    background: #3FC048;
+}
+
+.newsprev:hover .npr1 {
+    left: 20px;
+    opacity: 0;
+}
+
+.newsprev:hover .npr2 {
+    left: -28px;
+    opacity: 1;
+}
+
+/*.newsprev*/
+.newsnext {
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    right: -47px;
+    background: #FFFFFF;
+    overflow: hidden;
+    top: 50%;
+    margin-top: -19px;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+
+.newsnext span {
+    display: inline-block;
+    width: 90px;
+}
+
+.newsnext img {
+    margin-top: 11px;
+    transition: all .3s ease-in;
+}
+
+.nnex1 {
+    margin-left: 14px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.nnex2 {
+    margin-left: 0;
+    position: relative;
+    left: -40px;
+    opacity: 0;
+}
+
+.newsnext:hover {
+    background: #3FC048;
+}
+
+.newsnext:hover .nnex1 {
+    left: -20px;
+    opacity: 0;
+}
+
+.newsnext:hover .nnex2 {
+    left: -13px;
+    opacity: 1;
+}
+
+/*newsnext*/
+/*每日新闻*/
+.days {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.want {
+    width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.want img {
+    width: 100%;
+}
+
+.manu {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.daysway {
+    width: 660px;
+    float: left;
+}
+
+.way1 {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.way1 p {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    overflow: hidden;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 100;
+    background: url(../images/advbj.png);
+    background-size: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.daysway a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.way1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.waypic {
+    width: 50%;
+    height: 192px;
+    float: left;
+    position: relative;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.waypic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.liketime {
+    display: inline;
+    float: right;
+    font-size: 12px;
+    color: #747474;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.waycont {
+    width: 50%;
+    float: left;
+    background: #f5f5f5;
+    height: 192px;
+    position: relative;
+    z-index: 100;
+    padding: 0 11px 0 19px;
+    box-sizing: border-box;
+}
+
+.waycont h1 {
+    font-weight: 900;
+    font-size: 16px;
+    color: #404040;
+    line-height: 26px;
+    margin-top: 7px;
+    height: 52px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.waytext {
+    font-size: 14px;
+    color: #808080;
+    line-height: 22px;
+    height: 50px;
+    overflow: hidden;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-top: 1px dashed #dadada;
+    margin-top: 10px;
+    padding-top: 8px;
+}
+
+.way2:hover h1 {
+    color: #3FC048;
+}
+
+.jian {
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    left: -9px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.way_tit {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/daybj.png);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dayactbox {
+    width: 534px;
+    float: right;
+}
+
+.dayact {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.actpic {
+    width: 50%;
+    height: 192px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.actpic a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.actpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.dayact a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.waycont .zantime {
+    width: 95px;
+}
+
+.jians {
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.way_tits {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../images/daybj.png);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dayact a:hover h1 {
+    color: #3FC048;
+}
+
+
+/*广告位置*/
+.carbox {
+    width: 1200px;
+    margin: auto;
+}
+
+.carmat {
+    width: 768px;
+    float: left;
+    margin-bottom: 93px;
+}
+
+.carmat ul {
+    margin-top: 20px;
+}
+
+.carmat li {
+    margin-bottom: 50px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.matpic {
+    width: 768px;
+    height: 400px;
+}
+
+.matpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.matcont {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #f7f7f7;
+    padding: 15px 25px 15px 20px;
+    transition: all .3s ease-in;
+}
+
+.matcont h1 {
+    color: #3f3f3f;
+    font-size: 16px;
+    font-weight: 900;
+    transition: all .3s ease-in;
+}
+
+.mattext {
+    width: 100%;
+    height: 46px;
+    font-size: 14px;
+    color: #999999;
+    overflow: hidden;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.zantime {
+    width: 158px;
+    float: left;
+}
+
+.headport {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headport img {
+    width: 100%;
+    height: 100%;
+}
+
+.likename {
+    font-size: 12px;
+    color: #747474;
+}
+
+.zanbox {
+    width: 109px;
+    float: right;
+    text-align: right;
+    margin-top: 7px;
+}
+
+.like {
+    margin-top: 35px;
+}
+
+.liked {
+    display: inline-block;
+    width: 3px;
+    height: 2px;
+    background: #747474;
+    margin: 0 7px;
+    vertical-align: middle;
+}
+
+.zanbtn {
+    background: url(../images/zanbtn.png);
+    transition: all .3s ease-in;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.zannum {
+    font-size: 12px;
+    color: #747474;
+    vertical-align: middle;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.cri {
+    background: url(../images/cri.png);
+    transition: all .3s ease-in;
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    margin-left: 20px;
+    vertical-align: middle;
+    background-size: 100% 100%;
+}
+
+.zanbtn.active {
+    background: url(../images/zana.png);
+}
+
+.zanbtn:hover {
+    background: url(../images/zana.png);
+}
+
+.cri:hover {
+    background: url(../images/crihov.png);
+}
+
+.matcont > a {
+    display: block;
+}
+
+.carmore {
+    width: 100%;
+}
+
+.carmore a {
+    display: block;
+    width: 100%;
+    color: #3f3f3f;
+    font-size: 12px;
+    transition: all .3s ease-in;
+    text-align: center;
+    line-height: 48px;
+    background: #f4f4f4;
+}
+
+.carmore a:hover {
+    background: #3FC048;
+    color: #FFFFFF;
+}
+
+.carmat li:hover .matcont {
+    padding: 15px 20px 15px 25px;
+}
+
+.carmat li:hover h1 {
+    color: #3FC048;
+}
+
+/*新车资讯*/
+.drivebox {
+    width: 390px;
+    float: right;
+    display: block;
+}
+
+.drive {
+    margin-top: 20px;
+}
+
+.drpic {
+    width: 100%;
+    height: 270px;
+}
+
+.drpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.drcont {
+    box-sizing: border-box;
+    height: 84px;
+    border: 1px solid #eeeeee;
+    padding: 13px 13px;
+    transition: all .3s ease-in;
+}
+
+.drcont h1 {
+    width: 322px;
+    font-size: 16px;
+    color: #3f3f3f;
+    line-height: 30px;
+    transition: all .3s ease-in;
+}
+
+.drive li {
+    margin-bottom: 28px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.drive li:hover .drcont {
+    padding: 13px 18px;
+}
+
+.drive li:hover h1 {
+    color: #3FC048;
+}
+
+/*新车试驾*/
+.guidebox {
+    margin-top: 45px;
+}
+
+.guidelike .zanbox {
+    margin-top: 0;
+}
+
+.gupic {
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+}
+
+.gupic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in;
+}
+
+.guidecont h1 {
+    font-size: 16px;
+    color: #3f3f3f;
+    font-weight: 900;
+    transition: all .3s ease-in;
+}
+
+.guidetext {
+    font-size: 14px;
+    color: #999797;
+    line-height: 22px;
+    margin-top: 10px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.guidecont {
+    display: block;
+    padding: 14px 29px 14px 14px;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    transition: .3s ease-in;
+}
+
+.guideline {
+    width: 100%;
+    border-bottom: 1px dashed #dedede;
+    height: 1px;
+    margin: 15px auto;
+}
+
+.guide li:hover .guidecont {
+    padding: 14px 25px 14px 19px;
+}
+
+.guide li:hover h1 {
+    color: #3FC048;
+}
+
+.guide li:hover .gupic img {
+    transform: scale(1.05);
+}
+
+.guide li {
+    margin-bottom: 30px;
+    position: relative;
+    top: 105px;
+    opacity: 0;
+}
+
+/*导购信息*/
+.industbox {
+    width: 100%;
+}
+
+.indust {
+    margin-top: 10px;
+}
+
+.indust a {
+    display: block;
+}
+
+.indust li {
+    padding: 17px 0;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #dcdcdc;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.industpic {
+    width: 130px;
+    height: 85px;
+    float: left;
+    overflow: hidden;
+}
+
+.industpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in;
+}
+
+.industcont {
+    width: 234px;
+    float: left;
+    margin-left: 14px;
+    transition: all .3s ease-in;
+}
+
+.industcont h1 {
+    font-size: 16px;
+    color: #3f3f3f;
+    overflow: hidden;
+    font-weight: 900;
+    transition: all .3s ease-in;
+    line-height: 27px;
+    margin-bottom: 7px;
+    height: 54px;
+}
+
+.industcont p {
+    font-size: 12px;
+    color: #999999;
+}
+
+.indust a:hover h1 {
+    color: #3FC048;
+}
+
+.indust a:hover .industcont {
+    margin-left: 20px;
+}
+
+.indust a:hover img {
+    transform: scale(1.05);
+}
+
+.industbox .carmore {
+    display: none;
+}
+
+/*行业资讯*/
+.w_cartit {
+    width: 98%;
+    margin: auto;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.w_cartit span {
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    top: 2px;
+    padding-bottom: 6px;
+    box-sizing: border-box;
+    width: 33.333%;
+    text-align: center;
+    font-size: 18px;
+    color: #3f3f3f;
+    font-weight: 900;
+}
+
+.w_cartit .active {
+    border-bottom: 3px solid #64c96a;
+}
+
+.w_cut {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.w_drive a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.w_drive h1 {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    font-size: 19px;
+    color: #FFFFFF;
+    height: 42px;
+    line-height: 27px;
+    background: url(../images/advbj.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.w_prev {
+    z-index: 100;
+    text-align: center;
+    width: 30px;
+    height: 40px;
+    background: #3FC048;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.w_next {
+    z-index: 100;
+    text-align: center;
+    width: 30px;
+    height: 40px;
+    background: #3FC048;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.w_prev img {
+    width: 13px;
+    margin-top: 10px;
+}
+
+.w_next img {
+    width: 13px;
+    margin-top: 10px;
+}
+
+.w_carcut {
+    margin-bottom: 30px;
+}
+
+.w_cut.active {
+    display: block;
+}
+
+.w_cut .guidecont h1 {
+    color: #3FC048;
+}
+
+.w_cut .liked + .likename {
+    display: inline-block;
+    color: #3FC048;
+}
+
+.w_cut .liked {
+    display: inline-block;
+    background: #3FC048;
+}
+
+.w_cut .likename {
+    color: #3FC048;
+}
+
+.w_more {
+    display: block;
+    width: 100%;
+    color: #3f3f3f;
+    font-size: 12px;
+    transition: all .3s ease-in;
+    text-align: center;
+    line-height: 48px;
+    background: #f4f4f4;
+}
+
+.w_cut .indust {
+    margin-top: -17px;
+}
+
+.w_cut .indust ul {
+    margin-bottom: 17px;
+}
+
+.carmat {
+    margin-bottom: 50px;
+}
+
+.per_les {
+    display: none;
+}
+
+
+/*移动端新车试驾*/
+.advert {
+    margin: 30px auto 90px;
+}
+
+.advert li {
+    height: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.advert li a {
+    display: block;
+    position: relative;
+}
+
+.advert li img {
+    width: 100%;
+    height: 100%;
+}
+
+.advbj {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-image: url(../images/advbj.png);
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.advert li:hover .advbj {
+    opacity: 1;
+}
+
+.footbox {
+    padding: 62px 0;
+    box-sizing: border-box;
+    background-image: url(../images/footbj.png);
+    background-size: 100% 100%;
+}
+
+.footer {
+    width: 1200px;
+    margin: auto;
+}
+
+.analyse {
+    width: 246px;
+    float: left;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-right: 127px;
+}
+
+.footer h1 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 23px;
+    font-weight: 900;
+}
+
+.footer a {
+    color: #FFFFFF;
+}
+
+.footer span {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.footer p {
+    margin-top: 19px;
+}
+
+.footline {
+    width: 1px;
+    background: #3d4146;
+    height: 136px;
+    float: left;
+}
+
+.about {
+    width: 220px;
+    float: left;
+    margin-left: 120px;
+}
+
+.serve {
+    width: 230px;
+    float: left;
+}
+
+.follow {
+    width: 92px;
+    float: right;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+
+.follow p {
+    margin-top: 4px;
+}
+
+.w_ao {
+    display: none;
+}
+
+/*page*/
+
+@media only screen and (max-width: 1440px ) {
+    .top {
+        width: 1140px;
+    }
+
+    .ban_next {
+        right: 6%;
+    }
+
+    .ban_prev {
+        left: 6%;
+    }
+
+    .newsday {
+        width: 1140px;
+    }
+
+    .per_cenbox {
+        width: 1140px;
+    }
+
+    .per_seo {
+        width: 774px;
+    }
+
+    .newsban {
+        width: 1140px;
+    }
+
+    .homebox {
+        width: 1140px;
+    }
+
+    .footer {
+        width: 1140px;
+    }
+
+    .relebox {
+        width: 1140px;
+    }
+
+    .carbox {
+        width: 1140px;
+    }
+
+    .notice {
+        width: 1140px;
+    }
+
+    .listul li a {
+        width: 958px;
+    }
+
+    .rele {
+        width: 1035px;
+    }
+
+    .rele_combox {
+        width: 1035px;
+    }
+
+    .days {
+        width: 1140px;
+    }
+
+    .want {
+        width: 1140px;
+    }
+
+    .total {
+        width: 1140px;
+    }
+
+    .protit {
+        width: 1140px;
+    }
+
+    .probox {
+        width: 1140px;
+    }
+
+    .listmore {
+        width: 1140px;
+    }
+
+    .prolist {
+        width: 1176px;
+    }
+
+    .prolist li {
+        width: 360px;
+        margin: 0 16px 45px;
+        position: relative;
+        top: 100px;
+        opacity: 0;
+    }
+
+    .listpic {
+        width: 100%;
+        height: 212px;
+    }
+
+    .produle {
+        width: 710px;
+    }
+
+    .produri {
+        width: 430px;
+    }
+
+    .newsbox {
+        width: 1172px;
+    }
+
+    .newsbox li {
+        width: 287px;
+    }
+
+    .newsprev {
+        left: -35px;
+    }
+
+    .newsnext {
+        right: -35px;
+    }
+
+    .carmat {
+        width: 720px;
+    }
+
+    .matpic {
+        width: 720px;
+        height: 375px;
+    }
+
+    .analyse {
+        margin-right: 100px;
+    }
+
+    .newsban ul {
+        left: -4.5px;
+    }
+
+    .daysway {
+        width: 633px;
+    }
+
+    .dayactbox {
+        width: 500px;
+    }
+
+    .way1 {
+        height: 370px;
+    }
+
+    .waypic {
+        height: 182px;
+    }
+
+    .waycont {
+        height: 182px;
+    }
+
+    .waycont .like {
+        margin-top: 22px;
+    }
+
+    .actpic {
+        height: 182px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1280px ) {
+    .top {
+        width: 940px;
+    }
+
+    .nav {
+        width: 320px;
+        margin: 24px 20px;
+    }
+
+    .searchbox {
+        width: 170px;
+    }
+
+    .searchbox input {
+        width: 125px;
+    }
+
+    .ban_next {
+        right: 6%;
+    }
+
+    .ban_prev {
+        left: 6%;
+    }
+
+    .newsday {
+        width: 940px;
+    }
+
+    .newsban {
+        width: 940px;
+    }
+
+    .footer {
+        width: 940px;
+    }
+
+    .carbox {
+        width: 940px;
+    }
+
+    .days {
+        width: 940px;
+    }
+
+    .want {
+        width: 940px;
+    }
+
+    .newsbox {
+        width: 975px;
+    }
+
+    .newsbox li {
+        width: 237px;
+    }
+
+    .newsbox li a {
+        width: 225px;
+    }
+
+    .newsprev {
+        left: -35px;
+    }
+
+    .newsnext {
+        right: -35px;
+    }
+
+    .carmat {
+        width: 570px;
+    }
+
+    .matpic {
+        width: 570px;
+        height: 296px;
+    }
+
+    .analyse {
+        margin-right: 40px;
+    }
+
+    .newsban ul {
+        left: -4.5px;
+    }
+
+    .pic_div {
+        height: 137px;
+    }
+
+    .drivebox {
+        width: 335px;
+    }
+
+    .drpic {
+        height: 232px;
+    }
+
+    .industcont {
+        width: 177px;
+    }
+
+    .about {
+        margin-left: 80px;
+        width: 180px;
+    }
+
+    .serve {
+        width: 190px;
+    }
+
+    .daysway {
+        width: 535px;
+    }
+
+    .dayactbox {
+        width: 398px;
+    }
+
+    .way1 {
+        height: 316px;
+    }
+
+    .waypic {
+        height: 155px;
+    }
+
+    .waycont {
+        height: 155px;
+        padding: 0 2px 0 19px;
+    }
+
+    .waycont .like {
+        margin-top: 10px;
+    }
+
+    .waycont h1 {
+        font-size: 15px;
+        line-height: 20px;
+        height: 40px;
+    }
+
+    .liketime {
+        margin-right: 9px;
+    }
+
+    .actpic {
+        height: 155px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px ) {
+    .newsban {
+        width: 820px;
+    }
+
+    .newsbox {
+        width: 845px;
+        left: 48.5px;
+    }
+
+    .newsban ul {
+        left: 4.5px;
+    }
+
+    .newsban {
+        margin-left: 8.5px !important;
+    }
+
+    .newsbox li {
+        width: 205px;
+    }
+
+    .newsbox li a {
+        width: 196px;
+    }
+
+}
+
+@media only screen and (max-width: 992px ) {
+    .ban_next:hover .next1 {
+        margin: 13px auto;
+    }
+
+    .ban_next:hover .next2 {
+        margin: 40px auto;
+    }
+
+    .ban_prev:hover .prev1 {
+        margin: 13px auto;
+    }
+
+    .pic_bj {
+        display: none;
+    }
+
+    .top {
+        width: 98%;
+    }
+
+    .nav {
+        width: 35%;
+    }
+
+    .searchbox {
+        width: 140px;
+    }
+
+    .searchbox input {
+        width: 95px;
+    }
+
+    .logo {
+        width: 210px;
+        margin-top: 9px;
+    }
+
+
+    .newsday {
+        width: 98%;
+    }
+
+    .want {
+        width: 98%;
+    }
+
+    .days {
+        width: 98%;
+    }
+
+    .carbox {
+        width: 98%;
+    }
+
+    .carmat {
+        width: 61%;
+    }
+
+    .matpic {
+        width: 100%;
+    }
+
+    .newsbox {
+        width: 100%;
+        left: 0;
+    }
+
+    .newsban {
+        width: 100%;
+    }
+
+    .newsbox li a {
+        width: 99%;
+    }
+
+    .drivebox {
+        width: 36%;
+    }
+
+    .newsban ul {
+        left: 0;
+    }
+
+    .newsban {
+        margin-left: 0 !important;
+    }
+
+    .pic_div img {
+        height: auto;
+    }
+
+    .pic_div {
+        height: auto;
+    }
+
+    .newsbox li {
+        border-bottom: 1px solid #eeeeee;;
+    }
+
+    .newscont {
+        font-size: 13px;
+        line-height: 19px;
+        height: 55px;
+        padding: 5px 7px;
+    }
+
+    .footer {
+        width: 98%;
+    }
+
+    .about {
+        margin-left: 40px;
+        width: 120px;
+    }
+
+    .serve {
+        width: 133px;
+    }
+
+    .drpic {
+        height: auto;
+    }
+
+    .drcont h1 {
+        width: 99%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .drcont {
+        padding: 5px 13px;
+        height: 62px;
+    }
+
+    .guidecont {
+        padding: 14px 9px 14px 9px;
+    }
+
+    .guidecont .zantime {
+        width: 130px;
+    }
+
+    .industpic {
+        width: 50%;
+    }
+
+    .industcont {
+        width: 48%;
+        float: initial;
+        float: right;
+        margin-left: 0;
+    }
+
+    .industcont h1 {
+        font-size: 14px;
+    }
+
+    .guidebox {
+        margin-top: 24px;
+    }
+
+    .carmat li {
+        margin-bottom: 57px;
+    }
+
+    .guide li {
+        margin-bottom: 17px;
+    }
+
+    .daysway {
+        width: 100%;
+        margin-bottom: 6px;
+        float: none;
+    }
+
+    .waypic img {
+        height: 100%;
+    }
+
+    .dayactbox {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px ) {
+    .searchbox {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .regcut {
+        display: none;
+    }
+
+    .logo {
+        float: none;
+        margin: auto;
+        width: 180px;
+    }
+
+    .serbtn {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .way1 {
+        height: auto;
+    }
+
+    .way2 .waypic {
+        float: right;
+    }
+
+    .way2 .way_tit {
+        left: auto;
+        right: 0;
+    }
+
+    .way2 .jian {
+        left: auto;
+        right: -9px;
+        transform: rotate(180deg);
+    }
+
+    .waycont {
+        padding: 0 2px 0 8px;
+    }
+
+    .drivebox {
+        display: none;
+    }
+
+    .carmat {
+        width: 100%;
+        float: none;
+    }
+
+    .matpic {
+        height: auto;
+    }
+
+    .carmat li {
+        margin-bottom: 38px;
+    }
+
+    .matcont {
+        padding: 15px 10px 15px 10px;
+    }
+
+    .liked {
+        display: none;
+    }
+
+    .liked + .likename {
+        display: none;
+    }
+
+    .zanbox {
+        margin-top: 0;
+    }
+
+    .liketime {
+        display: none;
+    }
+
+    .footline {
+        display: none;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .analyse {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+
+    .ao {
+        display: none;
+    }
+
+    .footer {
+        margin-bottom: 28px;
+    }
+
+    .footbox {
+        padding: 30px 0;
+    }
+
+    .footer p {
+        margin-top: 13px;
+    }
+
+    .w_ao {
+        display: block;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 26px;
+        padding-top: 26px;
+        box-sizing: border-box;
+        border-top: 1px solid #FFFFFF;
+        width: 98%;
+        margin: auto;
+    }
+
+    .about {
+        width: 50%;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+
+    .serve {
+        width: 50%;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+
+    .about h1 {
+        display: inline-block;
+        width: 115px;
+        height: 38px;
+        line-height: 36px;
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+    }
+
+    .serve h1 {
+        display: inline-block;
+        width: 115px;
+        height: 38px;
+        line-height: 36px;
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+    }
+
+    body {
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .w_search {
+        display: block;
+    }
+
+    .advert {
+        display: none;
+    }
+
+    .industbox .carmore {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .industpic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carmat h2 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+    .news_tit a {
+        display: none;
+    }
+
+    .industbox li {
+        margin-bottom: 0;
+    }
+
+    .w_dribox .industbox {
+        border-top: 10px solid #f5f5f5;
+        padding-top: 20px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+     .news_tit {
+        display: none;
+    }
+
+    .active {
+        border-bottom: 3px solid #20AF2B;
+    }
+
+}
+
